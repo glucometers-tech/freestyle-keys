@@ -8,14 +8,8 @@ pull_request_rules:
       - or:
         - "#approved-reviews-by>=1"
         - "author=Flameeyes"
-      - "status-success=pytest (ubuntu-latest, 3.7)"
-      - "status-success=pytest (ubuntu-latest, 3.8)"
       - "status-success=pytest (ubuntu-latest, 3.9)"
-      - "status-success=pytest (macos-latest, 3.7)"
-      - "status-success=pytest (macos-latest, 3.8)"
       - "status-success=pytest (macos-latest, 3.9)"
-      - "status-success=pytest (windows-latest, 3.7)"
-      - "status-success=pytest (windows-latest, 3.8)"
       - "status-success=pytest (windows-latest, 3.9)"
       - "status-success=pre-commit"
     actions:
