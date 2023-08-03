@@ -11,6 +11,12 @@ pull_request_rules:
       - "status-success=pytest (ubuntu-latest, 3.9)"
       - "status-success=pytest (macos-latest, 3.9)"
       - "status-success=pytest (windows-latest, 3.9)"
+      - "status-success=pytest (ubuntu-latest, 3.10)"
+      - "status-success=pytest (macos-latest, 3.10)"
+      - "status-success=pytest (windows-latest, 3.10)"
+      - "status-success=pytest (ubuntu-latest, 3.11)"
+      - "status-success=pytest (macos-latest, 3.11)"
+      - "status-success=pytest (windows-latest, 3.11)"
       - "status-success=pre-commit"
     actions:
       merge:
