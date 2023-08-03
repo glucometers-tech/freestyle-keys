@@ -1,0 +1,13 @@
+# SPDX-FileCopyrightText: 2020 Diego Elio Pettenò
+#
+# SPDX-License-Identifier: 0BSD
+
+*~
+*.pyc
+*.so
+/*.egg-info/
+/.vscode/settings.json
+/build/
+/dist/
+/venv
+/src/*.c

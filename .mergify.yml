@@ -1,0 +1,23 @@
+# SPDX-FileCopyrightText: 2013 The freestyle-hid Authors
+#
+# SPDX-License-Identifier: 0BSD
+
+pull_request_rules:
+  - name: Automatic merge on approval
+    conditions:
+      - or:
+        - "#approved-reviews-by>=1"
+        - "author=Flameeyes"
+      - "status-success=pytest (ubuntu-latest, 3.7)"
+      - "status-success=pytest (ubuntu-latest, 3.8)"
+      - "status-success=pytest (ubuntu-latest, 3.9)"
+      - "status-success=pytest (macos-latest, 3.7)"
+      - "status-success=pytest (macos-latest, 3.8)"
+      - "status-success=pytest (macos-latest, 3.9)"
+      - "status-success=pytest (windows-latest, 3.7)"
+      - "status-success=pytest (windows-latest, 3.8)"
+      - "status-success=pytest (windows-latest, 3.9)"
+      - "status-success=pre-commit"
+    actions:
+      merge:
+        method: rebase
